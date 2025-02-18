@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p className="read-the-docs">
+      <p className="underline text-2xl">
         Click on the Vite and React logos to learn more
       </p>
     </>
