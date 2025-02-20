@@ -16,8 +16,7 @@ function ProjectsPage() {
 
     return (
         <>
-            <h1>Projects page</h1>
-            <FilterProjects setFilter={setFilter} />
+            <FilterProjects setFilter={setFilter} activeFilter={filter} />
             <ProjectCardList projects={filteredProjects} />
         </>
     )
