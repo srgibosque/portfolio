@@ -15,10 +15,10 @@ function ProjectsPage() {
 
 
     return (
-        <>
+        <section className="flex flex-col gap-4">
             <FilterProjects setFilter={setFilter} activeFilter={filter} />
             <ProjectCardList projects={filteredProjects} />
-        </>
+        </section>
     )
 }
 

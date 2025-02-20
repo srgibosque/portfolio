@@ -7,7 +7,7 @@ interface FilterButtonProps {
 const FilterButton = ({ text, onClick, isActive }: FilterButtonProps) => {
   return (
     <button
-      className={`text-sm font py-3 px-4 border-1 border-secondary-300 ${isActive? "bg-primary text-white" : "hover:bg-secondary-200"}`}
+      className={`text-sm font py-3 px-4 border-1 border-secondary-300 transition-all duration-300 ease-in-out ${isActive? "bg-primary text-white" : "hover:bg-secondary-200"}`}
       onClick={onClick}>
       {text}
     </button>

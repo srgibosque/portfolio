@@ -12,7 +12,7 @@ const FilterProjectsList = ({ setFilter, activeFilter }: FilterProjectsListProps
     const disciplines = Array.from(new Set(projects.map(project => project.discipline)));
 
     return (
-        <ul>
+        <ul className="flex flex-wrap gap-2">
             <li>
                 <FilterButton
                     text={"All projects"}

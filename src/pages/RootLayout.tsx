@@ -4,8 +4,10 @@ import Header from '../components/Header';
 const RootLayout = () => {
     return (
         <>
-            <Header/>
-            <Outlet />
+            <Header />
+            <main className='mx-4 my-3'>
+                <Outlet />
+            </main>
         </>
     )
 }
