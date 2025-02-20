@@ -1,17 +1,24 @@
+import { useState } from "react";
+
 import ProjectCardList from "../components/ProjectCardList";
-import { Project } from "../models/project.interface";
+import FilterProjects from "../components/FilterProjectsList";
+
+import projects from "../assets/data/projects";
 
 function ProjectsPage() {
+    const [filter, setFilter] = useState<string>("All projects");
 
-    const projects: Project[] = [
-        { id: 1, title: "Portfolio Website", year: 2024, discipline: "Web Development", description: "A modern portfolio built with React and TailwindCSS.", layout: "grid" },
-        { id: 2, title: "Brand Identity Design", year: 2023, discipline: "Graphic Design", description: "Complete brand identity for a tech startup.", layout: "carousel" }
-      ];
+    // Filter projects based on selected discipline
+    const filteredProjects = filter === "All projects"
+        ? projects
+        : projects.filter(project => project.discipline === filter);
+
 
     return (
         <>
-        <h1>Projects page</h1>
-        <ProjectCardList projects={projects} />
+            <h1>Projects page</h1>
+            <FilterProjects setFilter={setFilter} />
+            <ProjectCardList projects={filteredProjects} />
         </>
     )
 }

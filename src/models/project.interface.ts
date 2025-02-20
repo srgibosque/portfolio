@@ -2,7 +2,6 @@ export interface Project {
     id: number;
     title: string;
     year: number;
-    discipline: string;
+    discipline: "Industrial design" | "Service design" | "Interface design";
     description: string;
-    layout: "grid" | "carousel"; // Restrict to specific values
   }
