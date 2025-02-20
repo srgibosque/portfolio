@@ -4,4 +4,5 @@ export interface Project {
     year: number;
     discipline: "Industrial design" | "Service design" | "Interface design";
     description: string;
+    imageUrl: string;
   }

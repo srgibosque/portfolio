@@ -7,7 +7,7 @@ interface ProjectCardItemProps {
 const ProjectCardItem: React.FC<ProjectCardItemProps> = ({ project }) => {
     return (
         <li>
-            <img src="" alt="photo" />
+            <img src={project.imageUrl} alt={project.title} className="w-full h-auto" />
             <div className="flex pr-6 py-6 justify-between border-b-1 transition-all duration-300 ease-in-out hover:pr-2">
                 <div className="flex flex-col self-stretch gap-1">
                     <p className="text-gray-600 text-xs">{project.discipline} | {project.year}</p>
