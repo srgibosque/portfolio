@@ -32,9 +32,9 @@ const PersonalInfo = ({ name, city, country, birthdate }: PersonalInfoProps) => 
 
 
   return (
-    <section className='flex flex-row gap-5 text-sm'>
-      <img src={profileImage} alt="profile image" className='w-1/2 h-auto object-cover' />
-      <div className='flex flex-col gap-2 flex-1'>
+    <section className='flex flex-row gap-5 text-sm md:flex-col md:max-w-3xl'>
+      <img src={profileImage} alt="profile image" className='w-1/2 h-auto object-cover md:w-full' />
+      <div className='flex flex-col gap-2 '>
         <h3 className='font-medium'>{name}</h3>
         <p className='text-secondary-400'>{city}, {country}</p>
         <p className='text-secondary-400'>Born in {getMonthName(birthMonth)} {birthYear} | {age} y/o</p>

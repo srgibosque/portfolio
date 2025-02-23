@@ -5,7 +5,7 @@ import SectionTitle from "../components/sectionTitle";
 function ResumePage() {
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 md:flex-row md:gap-12">
 
       <PersonalInfo
         name="Sergi Bosque i Ródenas"
@@ -13,7 +13,7 @@ function ResumePage() {
         country="Catalunya"
         birthdate={new Date(1998, 6, 10)} />
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 md:gap-18 md:w-full">
 
         <section className="flex flex-col gap-8">
           <SectionTitle text="Professional experience" />
