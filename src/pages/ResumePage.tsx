@@ -5,7 +5,7 @@ import SectionTitle from "../components/sectionTitle";
 function ResumePage() {
 
   return (
-    <div className="flex flex-col gap-10 md:flex-row md:gap-12">
+    <div className="flex flex-col gap-10 lg:flex-row lg:gap-12">
 
       <PersonalInfo
         name="Sergi Bosque i Ródenas"

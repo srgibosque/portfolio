@@ -32,7 +32,7 @@ const PersonalInfo = ({ name, city, country, birthdate }: PersonalInfoProps) => 
 
 
   return (
-    <section className='flex flex-row gap-5 text-sm md:flex-col md:max-w-3xl'>
+    <section className='flex flex-row gap-5 text-sm lg:flex-col lg:max-w-3xl'>
       <img src={profileImage} alt="profile image" className='w-1/2 h-auto object-cover md:w-full' />
       <div className='flex flex-col gap-2 '>
         <h3 className='font-medium'>{name}</h3>

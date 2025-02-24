@@ -26,6 +26,14 @@ const projects: Project[] = [
       description: "Complete brand identity for a tech startup.",
       imageUrl: dummyImage
     },
+    {
+      id: 4,
+      title: "Brand Identity Design",
+      year: 2023,
+      discipline: "Interface design",
+      description: "Complete brand identity for a tech startup.",
+      imageUrl: dummyImage
+    },
   ];
   
 
