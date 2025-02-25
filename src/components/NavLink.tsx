@@ -12,10 +12,10 @@ const NavLinkComponent = ({ path, label, size = "regular" }: NavLinkProps) => {
             <NavLink
                 to={path}
                 className={({ isActive }) =>
-                    `${size === "regular" ? "font-medium" : "font-regular text-sm"}  
+                    `${size === "regular" ? "font-regular" : "font-regular text-sm"}  
               ${isActive
-                        ? "text-secondary-400 md:px-2"
-                        : "transition-all duration-500 ease-in-out hover:text-secondary-400 md:hover:px-2"}`
+                        ? "text-primary font-medium md:px-2"
+                        : "transition-all duration-500 ease-in-out md:hover:px-2"}`
                 }
             >
                 {label}

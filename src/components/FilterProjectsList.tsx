@@ -1,5 +1,6 @@
 import FilterButton from "./FilterButton";
 import projects from "../assets/data/projects";
+import { motion } from "motion/react";
 
 interface FilterProjectsListProps {
     setFilter: (filter: string) => void;
@@ -12,7 +13,12 @@ const FilterProjectsList = ({ setFilter, activeFilter }: FilterProjectsListProps
     const disciplines = Array.from(new Set(projects.map(project => project.discipline)));
 
     return (
-        <ul className="flex flex-wrap gap-2">
+        <motion.ul
+            className="flex flex-wrap gap-2"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            >
             <li>
                 <FilterButton
                     text={"All projects"}
@@ -27,7 +33,7 @@ const FilterProjectsList = ({ setFilter, activeFilter }: FilterProjectsListProps
                         isActive={activeFilter === discipline} />
                 </li>
             ))}
-        </ul>
+        </motion.ul>
     )
 }
 

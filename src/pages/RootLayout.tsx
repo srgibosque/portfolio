@@ -8,7 +8,7 @@ const RootLayout = () => {
             <Header />
             <div className='md:ml-52'>
                 <main className='flex justify-center'>
-                    <div className='w-full mx-4 my-3 md:mx-12 md:my-8 xl:max-w-[72rem]'>
+                    <div className='w-full mx-4 my-3 md:mx-12 md:my-8 xl:max-w-[80rem]'>
                         <Outlet />
                     </div>
                 </main>

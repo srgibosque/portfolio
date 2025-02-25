@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import ExperienceCard from "../components/ExperienceCard";
 import PersonalInfo from "../components/PersonalInfo";
 import SectionTitle from "../components/sectionTitle";
@@ -11,9 +12,15 @@ function ResumePage() {
         name="Sergi Bosque i Ródenas"
         city="Barcelona"
         country="Catalunya"
-        birthdate={new Date(1998, 6, 10)} />
+        birthdate={new Date(1998, 6, 10)}
+      />
 
-      <div className="flex flex-col gap-10 md:gap-18 md:w-full">
+      <motion.div
+        className="flex flex-col gap-10 md:gap-18 md:w-full"
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
 
         <section className="flex flex-col gap-8">
           <SectionTitle text="Professional experience" />
@@ -74,7 +81,8 @@ function ResumePage() {
           </div>
         </section>
 
-      </div>
+
+      </motion.div>
 
     </div>
 
