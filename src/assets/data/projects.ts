@@ -34,6 +34,62 @@ const projects: Project[] = [
       description: "Complete brand identity for a tech startup.",
       imageUrl: dummyImage
     },
+    {
+      id: 5,
+      title: "Brand Identity Design",
+      year: 2023,
+      discipline: "Service design",
+      description: "Complete brand identity for a tech startup.",
+      imageUrl: dummyImage
+    },
+    {
+      id: 6,
+      title: "Brand Identity Design",
+      year: 2023,
+      discipline: "Service design",
+      description: "Complete brand identity for a tech startup.",
+      imageUrl: dummyImage
+    },
+    {
+      id: 7,
+      title: "Brand Identity Design",
+      year: 2023,
+      discipline: "UX design",
+      description: "Complete brand identity for a tech startup.",
+      imageUrl: dummyImage
+    },
+    // {
+    //   id: 8,
+    //   title: "Brand Identity Design",
+    //   year: 2023,
+    //   discipline: "UX design",
+    //   description: "Complete brand identity for a tech startup.",
+    //   imageUrl: dummyImage
+    // },
+    // {
+    //   id: 9,
+    //   title: "Brand Identity Design",
+    //   year: 2023,
+    //   discipline: "UX design",
+    //   description: "Complete brand identity for a tech startup.",
+    //   imageUrl: dummyImage
+    // },
+    // {
+    //   id: 10,
+    //   title: "Brand Identity Design",
+    //   year: 2023,
+    //   discipline: "UX design",
+    //   description: "Complete brand identity for a tech startup.",
+    //   imageUrl: dummyImage
+    // },
+    // {
+    //   id: 11,
+    //   title: "Brand Identity Design",
+    //   year: 2023,
+    //   discipline: "UX design",
+    //   description: "Complete brand identity for a tech startup.",
+    //   imageUrl: dummyImage
+    // },
   ];
   
 
