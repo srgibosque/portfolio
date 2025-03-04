@@ -5,6 +5,7 @@ const projects: Project[] = [
     {
       id: 1,
       title: "Portfolio Website",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2024,
       discipline: "Interface design",
       description: "A modern portfolio built with React and TailwindCSS.",
@@ -13,6 +14,7 @@ const projects: Project[] = [
     {
       id: 2,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "Industrial design",
       description: "Complete brand identity for a tech startup.",
@@ -21,6 +23,7 @@ const projects: Project[] = [
     {
       id: 3,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "Industrial design",
       description: "Complete brand identity for a tech startup.",
@@ -29,6 +32,7 @@ const projects: Project[] = [
     {
       id: 4,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "Interface design",
       description: "Complete brand identity for a tech startup.",
@@ -37,6 +41,7 @@ const projects: Project[] = [
     {
       id: 5,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "Service design",
       description: "Complete brand identity for a tech startup.",
@@ -45,6 +50,7 @@ const projects: Project[] = [
     {
       id: 6,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "Service design",
       description: "Complete brand identity for a tech startup.",
@@ -53,6 +59,7 @@ const projects: Project[] = [
     {
       id: 7,
       title: "Brand Identity Design",
+      subtitle: "A modern portfolio built with React and TailwindCSS.",
       year: 2023,
       discipline: "UX design",
       description: "Complete brand identity for a tech startup.",
