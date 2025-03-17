@@ -42,8 +42,8 @@ const PersonalInfo = ({ name, city, country, birthdate }: PersonalInfoProps) => 
       <img src={profileImage} alt="profile image" className='w-1/2 h-auto object-cover md:w-full' />
       <div className='flex flex-col gap-2 '>
         <h3 className='font-medium'>{name}</h3>
-        <p className='text-secondary-400'>{city}, {country}</p>
-        <p className='text-secondary-400'>Born in {getMonthName(birthMonth)} {birthYear} | {age} y/o</p>
+        <p className='text-secondary-400 dark:text-secondary-dark-400'>{city}, {country}</p>
+        <p className='text-secondary-400 dark:text-secondary-dark-400'>Born in {getMonthName(birthMonth)} {birthYear} | {age} y/o</p>
       </div>
 
     </motion.section>

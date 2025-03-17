@@ -14,8 +14,8 @@ const ProjectsNavigationBar = () => {
   return (
     <div className="hidden w-full md:block md:overflow-y-auto">
       {Object.entries(disciplines).map(([discipline, projects]) => (
-        <div className="md:px-5 md:py-8 md:border-b-1 md:border-secondary-300 md:flex md:flex-col md:gap-3" key={discipline}>
-          <h3 className="text-secondary-400 text-xs uppercase tracking-widest">{discipline}</h3>
+        <div className="md:px-5 md:py-8 md:border-b-1 md:border-secondary-300 md:flex md:flex-col md:gap-3 dark:md:border-secondary-dark-300" key={discipline}>
+          <h3 className="text-secondary-400 text-xs uppercase tracking-widest dark:text-secondary-dark-400">{discipline}</h3>
           <ul className="flex flex-col gap-2">
             {projects.map((project) => (
               <NavLinkComponent 
