@@ -16,7 +16,7 @@ const ThemeToggle = () => {
   }, [darkMode]);
 
   return (
-    <div className="flex flex-row items-center w-full gap-4 md:py-8 md:px-5 outline-1 md:outline-secondary-300 md:dark:outline-secondary-dark-300">
+    <div className="hidden md:flex flex-row items-center w-full gap-4 md:py-8 md:px-5 outline-1 md:outline-secondary-300 md:dark:outline-secondary-dark-300">
       <button
         onClick={() => setDarkMode(!darkMode)}
         className="p-2 bg-primary dark:bg-secondary-dark-500 shadow-md dark:shadow-none hover:bg-primary/80 dark:hover:bg-secondary-dark-500/60"
