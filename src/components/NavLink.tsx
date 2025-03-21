@@ -14,7 +14,7 @@ const NavLinkComponent = ({ path, label, size = "regular" }: NavLinkProps) => {
         className={({ isActive }) =>
           `${
             isActive
-              ? "text-primary dark:text-primary-dark font-medium md:font-medium px-4 md:px-2"
+              ? "text-primary dark:text-primary-dark font-medium md:font-medium md:px-2"
               : `${
                   size === "regular" ? "font-light md:font-normal" : "text-sm"
                 } transition-all duration-500 ease-in-out hover:px-4 md:hover:px-2`

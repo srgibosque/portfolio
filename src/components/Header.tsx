@@ -17,24 +17,38 @@ const Header = () => {
       }
     };
 
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false); // Close menu when hitting md breakpoint
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [menuOpen]);
 
   return (
     <header
-      className={`sticky top-0 left-0 z-40 p-4 bg-white dark:bg-primary flex flex-col md:p-0 md:fixed md:top-0 md:left-0 md:w-52 md:h-dvh md:flex-col md:items-start md:justify-start md:border-r-1 md:border-secondary-300 dark:md:border-secondary-dark-300
-      ${scrolled ? "shadow-md md:shadow-none" : ""} 
-      ${
-        menuOpen
-          ? "border-b-1 border-secondary-300 dark:border-secondary-dark-300 md:border-0"
-          : ""
-      }`}
+      className={`sticky top-0 left-0 z-40 p-4 
+    bg-bg-primary dark:bg-primary 
+    flex flex-col md:p-0 md:fixed md:top-0 md:left-0 md:w-52 md:h-dvh md:flex-col md:items-start md:justify-start 
+    md:border-r-1 md:border-secondary-300 dark:md:border-secondary-dark-300 
+    ${scrolled ? "shadow-md md:shadow-none" : ""} 
+    ${
+      menuOpen
+        ? "dark:bg-secondary-dark-600 border-b-1 border-secondary-300 dark:border-secondary-dark-300 md:border-0"
+        : "dark:bg-primary"
+    }`}
     >
       <TopBar onMenuToggle={() => setMenuOpen(!menuOpen)} />
-      <NavigationBar isVisible={menuOpen} />
+      <NavigationBar  isVisible={menuOpen} />
       <ProjectsNavigationBar />
-      <ThemeToggle />
+      <ThemeToggle  isVisible={menuOpen} />
     </header>
   );
 };

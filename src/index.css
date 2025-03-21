@@ -4,6 +4,8 @@
     --color-primary: #262626;
     --color-primary-dark: #fafafa;
 
+    --color-secondary-dark-600: #303030;
+
     --color-secondary-dark-500: #373737;
 
     --color-secondary-400: #A0A5AC;
@@ -14,6 +16,8 @@
 
     --color-secondary-200: #F8F8F8;
     --color-secondary-dark-200: #E7E9ED;
+
+    --color-bg-primary:#fdfdfd;
 
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;

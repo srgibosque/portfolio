@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 
-const ThemeToggle = () => {
+interface ThemeToggleProps {
+  isVisible: boolean;
+}
+
+const ThemeToggle: React.FC<ThemeToggleProps> = ({isVisible}) => {
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
@@ -16,10 +20,10 @@ const ThemeToggle = () => {
   }, [darkMode]);
 
   return (
-    <div className="hidden md:flex flex-row items-center w-full gap-4 md:py-8 md:px-5 outline-1 md:outline-secondary-300 md:dark:outline-secondary-dark-300">
+    <div className={`${isVisible ? "flex" : "hidden"} md:flex flex-row items-center w-full gap-4 mt-6 md:mt-0 md:py-8 md:px-5 md:outline-1 md:outline-secondary-300 md:dark:outline-secondary-dark-300`}>
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="p-2 bg-primary dark:bg-secondary-dark-500 shadow-md dark:shadow-none hover:bg-primary/80 dark:hover:bg-secondary-dark-500/60"
+        className="p-2 bg-primary dark:bg-secondary-dark-300 shadow-md dark:shadow-none hover:bg-primary/80 dark:hover:bg-secondary-dark-300/80"
       >
         {darkMode ? (
           <svg
