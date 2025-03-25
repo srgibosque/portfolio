@@ -38,7 +38,7 @@ const Header = () => {
     bg-bg-primary dark:bg-primary 
     flex flex-col md:p-0 md:fixed md:top-0 md:left-0 md:w-52 md:h-dvh md:flex-col md:items-start md:justify-start 
     md:border-r-1 md:border-secondary-300 dark:md:border-secondary-dark-300 
-    ${scrolled ? "shadow-md md:shadow-none" : ""} 
+    ${scrolled ? "shadow-md dark:bg-secondary-dark-600 md:shadow-none md:dark:bg-primary" : ""} 
     ${
       menuOpen
         ? "dark:bg-secondary-dark-600 border-b-1 border-secondary-300 dark:border-secondary-dark-300 md:border-0"
