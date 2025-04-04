@@ -9,11 +9,11 @@ const links: Link[] = [
     text: "Email",
   },
   {
-    link: "/",
+    link: "https://www.linkedin.com/in/sergibosqueirodenas/",
     text: "LinkedIn",
   },
   {
-    link: "/",
+    link: "https://github.com/srgibosque",
     text: "Github",
   },
 ];
@@ -43,7 +43,7 @@ const Footer = () => {
                   stroke="currentColor"
                 />
               </svg>
-              <a href={link.link}>{link.text}</a>
+              <a href={link.link} target="_blank">{link.text}</a>
             </li>
           );
         })}
