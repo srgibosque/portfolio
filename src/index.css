@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #262626;
+    --color-primary-dark: #fafafa;
+
+    --color-secondary-dark-600: #303030;
+
+    --color-secondary-dark-500: #373737;
+
+    --color-secondary-400: #A0A5AC;
+    --color-secondary-dark-400: #8a8a8a;
+
+    --color-secondary-300: #E7E9ED;
+    --color-secondary-dark-300: #525252;
+
+    --color-secondary-200: #F8F8F8;
+    --color-secondary-dark-200: #E7E9ED;
+
+    --color-bg-primary:#fdfdfd;
+
+    --font-sans:  'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  @custom-variant dark (&:where(.dark, .dark *));
+
