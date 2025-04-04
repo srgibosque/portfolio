@@ -28,7 +28,7 @@ const Footer = () => {
         {links.map((link) => {
           return (
             <li
-              className="flex items-center gap-2 hover:underline"
+              className="flex items-center gap-2 hover:underline font-mono text-sm"
               key={link.text}
             >
               <svg

@@ -18,7 +18,7 @@ const ProjectCardItem: React.FC<ProjectCardItemProps> = ({ project }) => {
         </div>
         <div className="flex pr-6 py-6 justify-between border-b-1 transition-all duration-400 ease-in-out group-hover:pr-2">
           <div className="flex flex-col self-stretch gap-1">
-            <p className="text-secondary-400 dark:text-secondary-dark-400 text-xs">
+            <p className="text-secondary-400 dark:text-secondary-dark-400 text-sm font-light">
               {project.discipline} | {project.year}
             </p>
             <h2 className="text-2xl">{project.title}</h2>

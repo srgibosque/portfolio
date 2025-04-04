@@ -97,7 +97,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ isVisible }) => {
           </motion.div>
         </AnimatePresence>
       </button>
-      <p className="text-sm text-secondary-400 dark:text-secondary-dark-400">
+      <p className="text-sm font-light text-secondary-400 dark:text-secondary-dark-400">
         {darkMode ? "Dark Mode" : "Light Mode"}
       </p>
     </div>
