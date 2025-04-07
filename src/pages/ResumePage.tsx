@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import ExperienceCard from "../components/ExperienceCard";
 import PersonalInfo from "../components/PersonalInfo";
 import SectionTitle from "../components/sectionTitle";
+import Button from "../components/Button";
 
 function ResumePage() {
 
@@ -80,6 +81,24 @@ function ResumePage() {
               link="/" />
           </div>
         </section>
+
+        <Button
+        label="Open resume in PDF"
+        icon={
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="11"
+            height="10"
+            viewBox="0 0 11 10"
+            fill="none"
+          >
+            <path
+              d="M10 9.1087V0.5M10 0.5H1.3913M10 0.5L1 9.5"
+              stroke="currentColor"
+            />
+          </svg>
+        }
+      />
 
 
       </motion.div>
