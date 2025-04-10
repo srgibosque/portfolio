@@ -20,11 +20,11 @@ const links: Link[] = [
 
 const Footer = () => {
   return (
-    <footer className="flex flex-row items-center gap-4 py-8 px-5 border-t-1 border-secondary-300 dark:border-secondary-dark-300 mt-12 text-sm">
+    <footer className="flex flex-row md:items-center gap-8 md:gap-4 py-8 px-5 border-t-1 border-secondary-300 dark:border-secondary-dark-300 mt-12 text-sm">
       <h3 className="text-secondary-400 dark:text-secondary-dark-400 text-sm uppercase tracking-widest">
         Contact me
       </h3>
-      <ul className="flex flex-wrap gap-4">
+      <ul className="flex flex-col md:flex-row gap-4">
         {links.map((link) => {
           return (
             <li

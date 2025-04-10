@@ -7,6 +7,7 @@ type FixedStructureCardProps = {
   title: string;
   subtitle: string;
   description: string;
+  year: number;
   children?: ReactNode;
 };
 
@@ -15,12 +16,13 @@ const ProjectDetail: React.FC<FixedStructureCardProps> = ({
   title,
   subtitle,
   description,
+  year,
   children,
 }) => {
   return (
     <div>
       <div className="flex flex-col gap-6">
-        <div className="h-96 relative">
+        <div className="md:h-128 relative">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -58,13 +60,16 @@ const ProjectDetail: React.FC<FixedStructureCardProps> = ({
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <div className="flex flex-col gap-2 pb-4 border-b-1 border-secondary-300 dark:border-secondary-dark-300 md:gap-3 md:pb-6">
-            <h2 className="text-2xl md:text-4xl">{title}</h2>
-            <h3 className="text-lg md:text-xl text-secondary-400 dark:text-secondary-dark-400">
-              {subtitle}
-            </h3>
+          <div className="flex flex-row justify-between pb-4 border-b-1 border-secondary-300 dark:border-secondary-dark-300 md:pb-6">
+            <div className="flex flex-col gap-0 md:gap-3">
+              <h2 className="text-2xl md:text-4xl">{title}</h2>
+              <h3 className="text-md md:text-lg text-secondary-400 dark:text-secondary-dark-400">
+                {subtitle}
+              </h3>
+            </div>
+            <p className="font-mono text-sm">{year}</p>
           </div>
-          <p className="text-sm">{description}</p>
+          <p className="text-sm pb-8">{description}</p>
         </motion.div>
       </div>
       <motion.div

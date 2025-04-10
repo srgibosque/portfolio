@@ -26,7 +26,7 @@ const NavButton = ({ text, path, icon }: NavButtonProps) => {
           {icon}
         </div>
         <motion.p
-          className="text-sm"
+          className="hidden md:block md:text-sm dark:text-primary"
         >
           {text}
         </motion.p>
