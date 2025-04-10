@@ -9,7 +9,7 @@ interface ProjectCardListProps {
 const ProjectCardList: React.FC<ProjectCardListProps> = ({ projects }) => {
   return (
     <motion.ul
-      className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-y-8 gap-x-4"
+      className="grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-3 gap-y-8 gap-x-4"
       initial="hidden"
       animate="visible"
       variants={{
